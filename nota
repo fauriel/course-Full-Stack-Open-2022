@@ -1,0 +1,17 @@
+title Crear una nota
+
+Browser->Server: Peticion https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: Muestra el HTML
+browser->server: Peticion GEt a las notas  https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note right of   browser:
+Comieza a procesar toddas las notas creadas con anterioridad
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser:Envias tu contenido agregandolo al input y submit [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note left of  browser:
+EL browser envia tu nueva nota al contenido
+end note
